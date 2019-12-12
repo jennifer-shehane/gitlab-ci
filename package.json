@@ -1,0 +1,13 @@
+{
+  "name": "gitlab-ci",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@bahmutov/print-env": "^1.2.0",
+    "cypress": "^3.7.0"
+  }
+}
