@@ -1,7 +1,7 @@
-it('should pass', function () {
-  expect(true).to.be.true
+it('should fail', function () {
+  expect(true).to.be.false
 })
 
-it('should pass too', function () {
-  expect(true).to.be.true
+it('should fail too', function () {
+  expect(true).to.be.false
 })
