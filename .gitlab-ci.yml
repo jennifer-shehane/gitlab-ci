@@ -29,8 +29,6 @@ install:
     # useful to make sure we are not carrying around old versions
     - npx cypress cache path
     - npx cypress cache list
-    - $(npm bin)/print-env CI
-    - npm run cy:verify
 
 # all jobs that actually run tests can use the same definition
 .job_template: &job
@@ -38,9 +36,9 @@ install:
   stage: test
   script:
     # print CI environment variables for reference
-    - $(npm bin)/print-env CI
+    - npx print-env CI
     # run Cypress test in load balancing mode
-    - $(npm bin)/cypress run --record --parallel
+    - npx cypress run --record --parallel
   artifacts:
     when: always
     paths:
